@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmentation Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 100%; /* Ensure images fill their containers */
+            height: auto;
+            display: block;
+            margin-bottom: 10px; /* Add some space between images */
+        }
+        .image-label {
+            font-size: 20px;
+            margin-top: 5px; /* Adjust spacing between image and label */
+        }
+        .go-back-button {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .go-back-button:hover {
+            background-color: #45a049;
+        }
+        .return-button {
+            margin-top: 20px;
+            background-color: #1E90FF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .return-button:hover {
+            background-color: #4169E1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Segmentation Result</h1>
+        <div class="image-container">
+            <div class="original-image">
+                <img src="{{ original_image }}" alt="Original Image">
+                <div class="image-label">Original Image</div>
+            </div>
+            <div class="segmented-image">
+                <img src="{{ segmented_image }}" alt="Segmented Image">
+                <div class="image-label">Segmented Image</div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
